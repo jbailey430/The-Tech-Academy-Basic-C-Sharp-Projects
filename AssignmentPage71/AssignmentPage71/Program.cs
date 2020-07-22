@@ -24,9 +24,7 @@ namespace AssignmentPage71
             int pgNum = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Do you need help with anything? Please answer “true” or “false”.");
-            bool Yes = true;
-            bool No = false;
-            Console.ReadLine();
+            bool userBool = Convert.ToBoolean(Console.ReadLine());
 
             Console.WriteLine("Were there any positive experiences you’d like to share? Please give specifics.");
             string comment = Console.ReadLine(); 
