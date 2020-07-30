@@ -20,7 +20,8 @@ namespace AssignmentPg100
             int Speed = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Qualified?");
-            bool totalBool = (Age > 15 && (Dui == false  || Speed > 3));
+
+            bool totalBool = (Age > 15 && (Dui == false  && Speed <= 3 ));
             Console.WriteLine(totalBool);
             Console.ReadLine();
         }
