@@ -26,7 +26,7 @@ namespace assignmentPg125
 
             StringBuilder sb = new StringBuilder();
 
-            sb.Append("\t My name is Jacob. My favorite animal is a dog. \n I have a dog and her name is Chloe. \n We go on walks around the neighborhood every night. \n Some days we go on hikes and even to the beach. ");
+            sb.Append("My name is Jacob. My favorite animal is a dog. \n I have a dog and her name is Chloe. \n We go on walks around the neighborhood every night. \n Some days we go on hikes and even to the beach. ");
             Console.WriteLine(sb);
             Console.ReadLine();
         }
