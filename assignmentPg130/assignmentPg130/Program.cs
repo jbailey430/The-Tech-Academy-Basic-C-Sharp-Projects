@@ -14,8 +14,8 @@ class Program
         numArray[2] = 3;
         numArray[3] = 4;
         numArray[4] = 5;
-        
-        Console.WriteLine(numArray[Convert.ToInt32(Console.Read)])
+
+        Console.WriteLine(numArray[]);
     }
 }
 
