@@ -42,12 +42,12 @@ class Program
             if (userInput == j)
             {
                 Console.WriteLine("A match for " + userInput + " was found at index " + unique.IndexOf(userInput));
-                break;
+                
             }
             else
             {
                 Console.WriteLine("Oops, " + userInput + " is not in the list:");
-                break;
+               
             }
         }
         Console.ReadLine();
@@ -63,12 +63,12 @@ class Program
             if (identical[i] == userText)
             {
                 Console.WriteLine(i);
-                break;
+                
             }
             else
             {
                 Console.WriteLine("Oops, " + userText + " is not in the list:");
-                break;
+                
             }
         }
         Console.ReadLine();
