@@ -47,6 +47,7 @@ class Program
             else
             {
                 Console.WriteLine("Oops, " + userInput + " is not in the list:");
+                break;
             }
         }
         Console.ReadLine();
@@ -67,30 +68,34 @@ class Program
             else
             {
                 Console.WriteLine("Oops, " + userText + " is not in the list:");
+                break;
             }
         }
         Console.ReadLine();
 
 
 
-        List<string> same = new List<string>() { "dog", "cat", "dog", "bunny", "dog", "cat", "bunny" };
+        List<string> same = new List<string>() { "fish", "sea", "boats", "sea", "pirates", "sharks" };
+        List<string> duplicate = new List<string>() {};
 
-        int m = 0, n = 0, p = 0;
 
         foreach (string i in same)
         {
-            if (i == "dog")
-                m++;
-            else if (i == "cat")
-                n++;
-            else
-                p++;
+            
+            foreach (string j in duplicate)
+            {
+                if (i == j )
+                {
+                    Console.WriteLine("The name " + i + " is a duplicate.");
+                }
+
+            }
+            Console.WriteLine("Name is not on the list. ");
+            duplicate.Add(i);
         }
-        Console.WriteLine("Number of 'dog' = {0}", m);
-        Console.WriteLine("Number of 'cat' = {0}", n);
-        Console.WriteLine("Number of 'bunny' = {0}", p);
         Console.ReadLine();
     }
-
+        
+    
 }
 

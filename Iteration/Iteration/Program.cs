@@ -46,16 +46,16 @@ class Program
         //}
         //Console.ReadLine();
 
-        //List<string> names = new List<string>() { "Jesse", "Erik", "Daniel", "Adam" };
+        List<string> names = new List<string>() { "Jesse", "Erik", "Daniel", "Adam" };
 
-        //foreach (string name in names)
-        //{
-        //    if (name == "Jesse")
-        //    {
-        //        Console.WriteLine(name);
-        //    }
-        //}
-        //Console.ReadLine();
+        foreach (string name in names)
+        {
+            //if (name == "Jesse")
+            {
+                Console.WriteLine(name);
+            }
+        }
+        Console.ReadLine();
 
 
 
