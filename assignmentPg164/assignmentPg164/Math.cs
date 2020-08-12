@@ -19,9 +19,10 @@ namespace assignmentPg164
             int times = convertX * 4;
             return times;
         }
-        public int divide(int x)
+        public int divide(string x)
         {
-            int total = x / 2;
+            int convertX = Convert.ToInt32(x);
+            int total = convertX / 2;
             return total;
         }
     }
