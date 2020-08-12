@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace assignmentPg165
 {
-    class Class1
+    class Para
     {
+        public int Plus(int x, int y = 2)
+        {
+            return x + y;
+        }
     }
 }
