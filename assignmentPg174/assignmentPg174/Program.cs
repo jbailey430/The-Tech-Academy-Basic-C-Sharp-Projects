@@ -10,15 +10,24 @@ namespace assignmentPg174
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.FirstName = "Sample";
-            employee.LastName = "Student";
+            Employee employee1 = new Employee();
+            employee1.ID = 1;
+            employee1.FirstName = "Sample";
+            employee1.LastName = "Student";
+            Employee employee2 = new Employee();
+            employee2.ID = 1;
+            employee2.FirstName = "Joe";
+            employee2.LastName = "Snow";
 
-            employee.SayName();
-            
-            
-
-
+            if (employee1 == employee2)
+            {
+                Console.WriteLine("Employee ID is equal.");
+            }
+            else 
+            {
+                Console.WriteLine("Employee ID is not equal");
+            }
+            Console.ReadLine();
         }
     }
 }
