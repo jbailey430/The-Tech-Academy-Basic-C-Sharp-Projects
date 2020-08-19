@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{807BEAFE-2345-4D0C-B67B-A0EF8285288B}</ProjectGuid>
+    <ProjectGuid>{A011675C-0711-4CDF-93F7-29253C9E5462}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>assignmentPg190</RootNamespace>
-    <AssemblyName>assignmentPg190</AssemblyName>
+    <RootNamespace>assignmentPg195</RootNamespace>
+    <AssemblyName>assignmentPg195</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
