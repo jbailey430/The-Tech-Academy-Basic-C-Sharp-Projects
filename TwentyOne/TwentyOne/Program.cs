@@ -10,16 +10,31 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            
-            Card card1 = new Card();
-            Card card2 = card1;
-            card1.Face = Face.Eight;
-            card2.Face = Face.King;
 
-            Console.WriteLine(card1.Face);
-            
+
+
 
             //Deck deck = new Deck();
+
+            //int count = deck.Cards.Count(x => x.Face == Face.Ace);
+
+            //List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList();
+
+            //List<int> numberList = new List<int>() { 1, 2, 3, 535, 342, 23 };
+
+            //int sum = numberList.Sum(x => x + 5);
+            //int sum = numberList.Max();
+            //int sum = numberList.Min();
+            //int sum = numberList.Where(x => x > 20).Sum();
+
+            //Console.WriteLine(sum);
+
+
+            //foreach (Card card in newList)
+            //{
+            //    Console.WriteLine(card.Face);
+            //}
+           
             //deck.Shuffle(3);
 
             //foreach (Card card in deck.Cards)
