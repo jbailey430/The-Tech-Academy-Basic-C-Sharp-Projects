@@ -28,7 +28,7 @@ namespace assignmentPg203
             {
                 if (name.Fname == "Joe")
                 {
-                    Console.WriteLine(name.empID + " " + name.Fname + " " + name.Lname);
+                    Console.WriteLine("ID:" + name.empID + " " + "Name:" + name.Fname + " " + name.Lname);
                 }
             }
             Console.ReadLine();
