@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
+using Casino;
+using Casino.TwentyOne;
 
 namespace TwentyOne
 {
@@ -11,23 +10,28 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            //DateTime yearOfBirth = new DateTime(1995, 5, 23, 8, 32, 45);
-            //DateTime yearofGraduation = new DateTime(2013, 6, 1, 16, 34, 22);
+            //var newDictionary = new Dictionary<string, string>();
+            //var newPlayer = new Player("Jake");
 
-            //TimeSpan ageAtGraduation = yearofGraduation - yearOfBirth;
+            const string casinoName = "Grand Hotel and Casino";
+
             
 
-
-
-            Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
+            Console.WriteLine("Welcome to the {0}. Let's start by telling me your name.", casinoName);
             string playerName = Console.ReadLine();
             Console.WriteLine("And how much money did you bring today?");
             int bank = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now?", playerName);
             string answer = Console.ReadLine().ToLower();
-            if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya")
+            if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya" || answer == "yea")
             {
                 Player player = new Player(playerName, bank);
+                player.ID = Guid.NewGuid();
+                using (StreamWriter file = new StreamWriter(@"C:\Users\JAKEBAILEY30\source\repos\repos.txt", true))
+                {
+                    file.WriteLine(player.ID);
+                    
+                }
                 Game game = new TwentyOneGame();
                 game += player;
                 player.isActivelyPlaying = true;
