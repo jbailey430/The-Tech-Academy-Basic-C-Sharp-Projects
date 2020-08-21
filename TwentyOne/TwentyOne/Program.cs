@@ -11,7 +11,12 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            //DateTime yearOfBirth = new DateTime(1995, 5, 23, 8, 32, 45);
+            //DateTime yearofGraduation = new DateTime(2013, 6, 1, 16, 34, 22);
+
+            //TimeSpan ageAtGraduation = yearofGraduation - yearOfBirth;
             
+
 
 
             Console.WriteLine("Welcome to the Grand Hotel and Casino. Let's start by telling me your name.");
