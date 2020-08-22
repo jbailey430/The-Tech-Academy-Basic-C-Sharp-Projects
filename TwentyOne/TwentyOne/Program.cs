@@ -33,7 +33,7 @@ namespace TwentyOne
 
             Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now?", playerName);
             string answer = Console.ReadLine().ToLower();
-            if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya" || answer == "yea")
+            if (answer == "yes" || answer == "yeah" || answer == "y" || answer == "ya" || answer == "yea" || answer == "sure")
             {
                 Player player = new Player(playerName, bank);
                 player.ID = Guid.NewGuid();
@@ -50,6 +50,12 @@ namespace TwentyOne
                     try
                     {
                         game.Play();
+                    }
+                    catch (FraudException)
+                    {
+                        Console.WriteLine("Security! Kick this person out.");
+                        Console.ReadLine();
+                        return;
                     }
                     catch (Exception)
                     {
