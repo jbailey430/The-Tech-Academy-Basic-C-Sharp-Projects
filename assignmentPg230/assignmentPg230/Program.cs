@@ -10,8 +10,11 @@ namespace assignmentPg230
     {
         static void Main(string[] args)
         {
+            
             const string Name = "Jake Bailey";
             var school = "The Tech Academy";
+
+            var ConstructMe = new ConstructMe(Name);
             Console.WriteLine("{0} is attending {1}.", Name, school);
             Console.ReadLine();
         }
